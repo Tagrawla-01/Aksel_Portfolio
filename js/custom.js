@@ -56,7 +56,7 @@
 //   }
 // }
 $('.Toggle_Dark').click(function(){
-  $(body).classList.toggle('dark__Mood');
+ body.classList.toggle('dark__Mood');
   console.log('toggle the dark mood')
     if(theme_icon.classList.contains('bi-moon')){
       theme_icon.classList.remove('bi-moon');
