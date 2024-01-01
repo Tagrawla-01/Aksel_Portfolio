@@ -55,14 +55,18 @@
 //      theme_icon.classList.add('bi-moon');
 //   }
 // }
-$('.Toggle_Dark').click(function(){
- body.classList.toggle('dark__Mood');
-  console.log('toggle the dark mood')
-    if(theme_icon.classList.contains('bi-moon')){
-      theme_icon.classList.remove('bi-moon');
-      theme_icon.classList.add('bi-sun');
-    }else if(theme_icon.classList.contains('bi-sun')){
-      theme_icon.classList.remove('bi-sun');
-      theme_icon.classList.add('bi-moon');
-    }
-})
+$('.Toggle_Dark').click(function() {
+  document.body.classList.toggle('dark__Mood');
+  console.log('toggle the dark mood');
+  
+  const theme_icon = document.getElementById('theme-icon'); // Assuming you have an element with the ID 'theme-icon'
+  
+  if (theme_icon.classList.contains('bi-moon')) {
+    theme_icon.classList.remove('bi-moon');
+    theme_icon.classList.add('bi-sun');
+  } else if (theme_icon.classList.contains('bi-sun')) {
+    theme_icon.classList.remove('bi-sun');
+    theme_icon.classList.add('bi-moon');
+  }
+});
+
